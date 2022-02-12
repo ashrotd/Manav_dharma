@@ -1,1 +1,0 @@
-web: gunicorn manav_dharma.wsgi --log-file -
