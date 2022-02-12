@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="icon" href="{% static 'assets/images/logos.png' %}" sizes="35x35" type="image/png">
+        <title>{% block title %}{% endblock title %} | Manav Dharma Nepal</title>
+
+        <link rel="stylesheet" href="{% static 'assets/css/all.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/jquery.fancybox.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/jquery.bootstrap-touchspin.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/perfect-scrollbar.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/color.css' %}">
+    </head>
+    <main>
+        {% include 'includes/header.html' %}
+        {% block body %}
+    
+        {% endblock body %}
+     {% include 'includes/footer.html' %}

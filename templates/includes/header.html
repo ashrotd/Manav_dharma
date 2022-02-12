@@ -1,0 +1,184 @@
+
+{% load static %}
+<!--<div id="preloader">            
+    <div class="preloader-inner">
+        <i class="preloader-icon thm-clr flaticon-kaaba"></i>
+    </div>
+</div> --> 
+<header class="stick style1 w-100 mb-5">
+    <div class="topbar d-flex flex-wrap justify-content-center w-100" style="background:#24438c">
+        
+        <div class="social-links d-inline-flex" style="color:white;">
+            <a href="https://twitter.com/" title="Twtiiter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/" title="Youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/" title="Linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div><!-- Topbar -->
+<!-- Logo Menu Wrap -->
+</header><!-- Header -->
+<div class="sticky-menu">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-between w-100">
+            <div class="logo"><h1 class="mb-0"><a href="{% url 'home' %}" title="Home">
+                <img class="img-fluid" src="{% static 'assets/images/logos.png' %}" alt="Logo" srcset="{% static 'assets/images/logos.png' %}"></a></h1></div><!-- Logo -->
+            <nav class="d-flex flex-wrap align-items-center justify-content-between">
+                <div class="header-left">
+                    <ul class="mb-0 list-unstyled d-inline-flex">
+                        <li><a href="{% url 'home' %}" title="">Home</a>
+                            
+                        </li>
+                        <li><a href="{% url 'blog' %}" title="">Blog</a>
+                            
+                        </li>
+                        <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Pages</a>
+                            <ul class="mb-0 list-unstyled">
+                                <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Our Scholars</a>
+                                    <ul class="mb-0 list-unstyled">
+                                        <li><a href="scholar-style1.html" title="">Scholar Style 1</a></li>
+                                        <li><a href="scholar-style2.html" title="">Scholar Style 2</a></li>
+                                        <li><a href="scholar-detail.html" title="">Scholar Detail</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Urgent Donation</a>
+                                    <ul class="mb-0 list-unstyled">
+                                        <li><a href="urgent-donation.html" title="">Urgent Donation</a></li>
+                                        <li><a href="donation-detail.html" title="">Donation Detail</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Online Courses</a>
+                                    <ul class="mb-0 list-unstyled">
+                                        <li><a href="online-courses.html" title="">Online Courses</a></li>
+                                        <li><a href="online-courses-detail.html" title="">Online Courses Detail</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Our Services</a>
+                                    <ul class="mb-0 list-unstyled">
+                                        <li><a href="services.html" title="">Services Style 1</a></li>
+                                        <li><a href="services2.html" title="">Services Style 2</a></li>
+                                        <li><a href="services-detail.html" title="">Services Detail</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Our Gallery</a>
+                                    <ul class="mb-0 list-unstyled">
+                                        <li><a href="gallery.html" title="">Gallery Style 1</a></li>
+                                        <li><a href="gallery2.html" title="">Gallery Style 2</a></li>
+                                        <li><a href="gallery3.html" title="">Gallery Style 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Our Events</a>
+                                    <ul class="mb-0 list-unstyled">
+                                        <li><a href="events.html" title="">Events</a></li>
+                                        <li><a href="event-detail.html" title="">Event Detail</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Our Sermons</a>
+                                    <ul class="mb-0 list-unstyled">
+                                        <li><a href="sermons.html" title="">Sermons</a></li>
+                                        <li><a href="sermons-detail.html" title="">Sermons Detail</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{% url 'audio' %}" title="">Audio Listening</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{% url 'video' %}" title="">Video Satsang</a></li>
+                        <li><a href="{% url 'about' %}" title="">About Us</a></li>
+                        <li><a href="{% url 'contact' %}" title="">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Sticky Menu -->
+<div class="rspn-hdr">
+    <div class="rspn-mdbr">
+        <div class="rspn-scil">
+            <a href="https://twitter.com/" title="Twtiiter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/" title="Youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/" title="Linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <form class="rspn-srch">
+            <input type="text" placeholder="Enter Your Keyword">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <div class="lg-mn">
+        <div class="logo"><a href="index.html" title="Home"><img src="{% static 'assets/images/logos.png' %}" alt="Logo"></a></div>
+        <div class="rspn-cnt">
+            <span><i class="thm-clr far fa-envelope"></i><a href="javascript:void(0);" title="">info@youremailid.com</a></span>
+            <span><i class="thm-clr fas fa-phone-alt"></i>+96 125 554 24 5</span>
+        </div>
+        <span class="rspn-mnu-btn"><i class="fa fa-list-ul"></i></span>
+    </div>
+    <div class="rsnp-mnu">
+        <span class="rspn-mnu-cls"><i class="fa fa-times"></i></span>
+        <ul class="mb-0 list-unstyled w-100">
+            <li><a href="{% url 'home' %}" title="">Home</a>
+                
+            </li>
+            <li><a href="{% url 'blog' %}" title="">Blog</a>
+                <ul class="mb-0 list-unstyled">
+                    <li><a href="blog.html" title="">Blog Style 1</a></li>
+                    <li><a href="blog2.html" title="">Blog Style 2</a></li>
+                    <li><a href="blog-detail.html" title="">Blog Detail</a></li>
+                </ul>
+            </li>
+            <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Pages</a>
+                <ul class="mb-0 list-unstyled">
+                    <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Our Scholars</a>
+                        <ul class="mb-0 list-unstyled">
+                            <li><a href="scholar-style1.html" title="">Scholar Style 1</a></li>
+                            <li><a href="scholar-style2.html" title="">Scholar Style 2</a></li>
+                            <li><a href="scholar-detail.html" title="">Scholar Detail</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Urgent Donation</a>
+                        <ul class="mb-0 list-unstyled">
+                            <li><a href="urgent-donation.html" title="">Urgent Donation</a></li>
+                            <li><a href="donation-detail.html" title="">Donation Detail</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Online Courses</a>
+                        <ul class="mb-0 list-unstyled">
+                            <li><a href="online-courses.html" title="">Online Courses</a></li>
+                            <li><a href="online-courses-detail.html" title="">Online Courses Detail</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Our Services</a>
+                        <ul class="mb-0 list-unstyled">
+                            <li><a href="services.html" title="">Services Style 1</a></li>
+                            <li><a href="services2.html" title="">Services Style 2</a></li>
+                            <li><a href="services-detail.html" title="">Services Detail</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Our Gallery</a>
+                        <ul class="mb-0 list-unstyled">
+                            <li><a href="gallery.html" title="">Gallery Style 1</a></li>
+                            <li><a href="gallery2.html" title="">Gallery Style 2</a></li>
+                            <li><a href="gallery3.html" title="">Gallery Style 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Our Sermons</a>
+                        <ul class="mb-0 list-unstyled">
+                            <li><a href="sermons.html" title="">Sermons</a></li>
+                            <li><a href="sermons-detail.html" title="">Sermons Detail</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{% url 'audio' %}" title="">Audio Listening</a></li>
+                </ul>
+            </li>
+            <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Our Events</a>
+                <ul class="mb-0 list-unstyled">
+                    <li><a href="events.html" title="">Events</a></li>
+                    <li><a href="event-detail.html" title="">Event Detail</a></li>
+                </ul>
+            </li>
+            <li><a href="{% url 'video' %}" title="">Video Satsang</a></li>
+            <li><a href="{% url 'about' %}" title="">About Us</a></li>
+            <li><a href="{% url 'contact' %}" title="">Contact Us</a></li>
+        </ul>
+    </div><!-- Responsive Menu -->
+</div><!-- Responsive Header -->
