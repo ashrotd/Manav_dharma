@@ -5656,3 +5656,14 @@ ul.children .comment-detail > p {max-width: 100%;}
   padding: 1.03125rem 2.5rem;
 }
 .event-booking-form button span {margin-top: 0;}
+
+#card_ko {
+  margin-top: -20px;
+  margin-left: 85px;
+}
+@media only screen and (max-width: 600px) {
+  #card_ko {
+    width: 100% !important;
+    margin-left: 0px;
+  }
+}
