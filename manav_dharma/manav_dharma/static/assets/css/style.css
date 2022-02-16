@@ -5668,3 +5668,10 @@ ul.children .comment-detail > p {max-width: 100%;}
     margin-left: 0px;
   }
 }
+
+#footer {
+  background-image: url(http://127.0.0.1:8000/static/assets/images/bottomimg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
