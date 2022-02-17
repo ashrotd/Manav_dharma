@@ -120,22 +120,26 @@ body {
   max-width: 100%;
 }
 @font-face {
-  font-family : 'Magazine', sans-serif;
+  font-family : 'Magazine';
   src : url(../fonts/MagazineGrotesque-Bold.ttf)
 }
 
+@font-face {
+  font-family : 'Regular';
+  src : url(../fonts/MagazineGrotesque-Regular.tff)
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: Magazine;
+  font-family: Magazine, sans-serif;
   color: #222;
   font-weight: 700;
 }
 p {
-  font-family: Noto Serif;
+  font-family: Regular;
   color: #666;
   line-height: 1.875rem;
   font-size: 1.0625rem;
@@ -1282,7 +1286,7 @@ header {
 .bg-color1 .social-links > a {color: white;}
 nav ul li {
   position: relative;
-  font-family: Philosopher;
+  font-family: Magazine;
   color: #333;
 }
 nav > div > ul > li {
