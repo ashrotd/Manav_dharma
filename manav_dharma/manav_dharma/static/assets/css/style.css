@@ -5675,7 +5675,7 @@ ul.children .comment-detail > p {max-width: 100%;}
 @media only screen and (max-width: 600px) {
   #card_ko {
     width: 100% !important;
-    margin-left: 0px;
+    margin-top: 0px;
   }
 }
 
