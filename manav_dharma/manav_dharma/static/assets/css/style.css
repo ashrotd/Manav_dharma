@@ -461,7 +461,7 @@ footer {
 }
 .black-layer:before {background-color: #000000;}
 .white-layer:before {background-color:#ffffff;}
-.gray-layer:before {background-color: #f8f8f8}
+
 .gray-layer2:before {background-color: #fbfbfb}
 .gray-layer3:before {background-color: #eff4f1}
 .dark-layer:before {background-color: #efebdb;}
