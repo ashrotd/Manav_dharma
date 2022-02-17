@@ -492,7 +492,7 @@ footer {
 .opc7:before {opacity: .7;}
 .opc75:before {opacity: .75;}
 .opc8:before {opacity: .8;}
-.opc85:before {opacity: .85;}
+.opc85:before {opacity: .85; border-radius: 8px 8px;}
 .opc9:before {opacity: .9;}
 .opc95:before {opacity: .95;}
 .opc97:before {opacity: .97;}
