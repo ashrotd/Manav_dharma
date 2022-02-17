@@ -2516,8 +2516,8 @@ span.event-price i {
 /*===== Campaigns Style 1 =====*/
 .camp-wrap {margin-top: -10px;}
 .camp-img {
-  min-width: calc(100% + .9375rem);
-  margin-left: -.9375rem;
+
+
 }
 .camp-img > a {
   color: #fff;
@@ -2535,7 +2535,7 @@ span.event-price i {
 .camp-info {
   max-width: calc(100% - .9375rem);
   border: 1.25rem solid #fff;
-  padding: 3.4375rem 3.75rem 4.6875rem 3.75rem;
+  padding: 2rem 2rem 2rem 2rem;
 }
 .camp-info > h3 {
   color: #fff;
