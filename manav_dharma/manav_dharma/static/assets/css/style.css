@@ -119,13 +119,18 @@ body {
   width: 100%;
   max-width: 100%;
 }
+@font-face {
+  font-family : 'Magazine', sans-serif;
+  src : url(../fonts/MagazineGrotesque-Bold.ttf)
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: Philosopher;
+  font-family: Magazine;
   color: #222;
   font-weight: 700;
 }
