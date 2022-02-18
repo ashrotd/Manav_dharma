@@ -8,7 +8,7 @@ from django.core.paginator import Paginator
 # Create your views here.
 def blog(request):
     blogs = BlogModel.objects.all()
-    paginator = Paginator(blogs,3)
+    paginator = Paginator(blogs,9)
     page = request.GET.get('page')
     paged_blogs = paginator.get_page(page)
     context = {'blogs':paged_blogs}
