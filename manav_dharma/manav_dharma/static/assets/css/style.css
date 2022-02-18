@@ -109,6 +109,22 @@
 
 strong {font-weight: 600;}
 
+@keyframes bounce{
+  20%,50%,80%,to{
+    transform: translateY(0);
+  }
+  40%{
+    transform: translateY(-30px);
+  }
+  70%{
+    transform: translateY(-15px);
+
+  }
+  90%{
+    transform: translateY(-4px);
+  }
+}
+
 /*=== General Styling ===*/
 body, 
 html {overflow-x: hidden;}
@@ -137,6 +153,7 @@ h6 {
   font-family: Magazine, sans-serif;
   color: #222;
   font-weight: 700;
+  animation: bounce 1s linear;
 }
 p {
   font-family: Regular;
