@@ -40,7 +40,7 @@
                                 </div>
                                 <ul class="post-meta2 d-inline-flex flex-wrap align-items-center mb-0 list-unstyled">
                                     
-                                    <li class="thm-clr"><img class="img-fluid rounded-circle" src="{% static 'assets/images/resources/post-author-thumb1-1.jpg' %}" alt="Post Author Thumb 1">BY: <a href="javascript:void(0);" title="">{{single_blog.author}}</a></li>
+                                    <li class="thm-clr"><img class="img-fluid rounded-circle" src="{% static 'assets/images/audiologo.png' %}" alt="Post Author Thumb 1">BY: <a href="javascript:void(0);" title="">{{single_blog.author}}</a></li>
                                 </ul>
                                 <h2 class="mb-4">{{single_blog.title }}</h2>
                                 {{single_blog.content | safe}}
@@ -74,27 +74,15 @@
                             <div class="widget2 w-100">
                                 <h3 class="widget-title2">RECENT POSTS</h3>
                                 <div class="mini-posts-wrap w-100">
+                                    {% for i in recent_blog %}
                                     <div class="mini-post-box d-flex flex-wrap w-100">
-                                        <a href="blog-detail.html" title=""><img class="img-fluid w-100" src="assets/images/resources/mini-post-img1.jpg" alt="Mini Post Image 1"></a>
+                                        <a href="{{i.get_url}}" title=""><img class="img-fluid w-100" src="{{i.image.url}}" alt="Mini Post Image 1"></a>
                                         <div class="mini-post-info">
-                                            <span class="d-block thm-clr">Mar 20, 2020</span>
-                                            <h4 class="mb-0"><a href="blog-detail.html" title="">This is How I Relax on Lazy Sundays</a></h4>
+                                            <span class="d-block thm-clr">{{i.created_date}}</span>
+                                            <h4 class="mb-0"><a href="blog-detail.html" title="">{{i.title}}</a></h4>
                                         </div>
                                     </div>
-                                    <div class="mini-post-box d-flex flex-wrap w-100">
-                                        <a href="blog-detail.html" title=""><img class="img-fluid w-100" src="assets/images/resources/mini-post-img2.jpg" alt="Mini Post Image 2"></a>
-                                        <div class="mini-post-info">
-                                            <span class="d-block thm-clr">Jun 18, 2020</span>
-                                            <h4 class="mb-0"><a href="blog-detail.html" title="">Going Shopping in New Dress & a Hat</a></h4>
-                                        </div>
-                                    </div>
-                                    <div class="mini-post-box d-flex flex-wrap w-100">
-                                        <a href="blog-detail.html" title=""><img class="img-fluid w-100" src="assets/images/resources/mini-post-img3.jpg" alt="Mini Post Image 3"></a>
-                                        <div class="mini-post-info">
-                                            <span class="d-block thm-clr">Jul 25, 2020</span>
-                                            <h4 class="mb-0"><a href="blog-detail.html" title="">How an Island Forms in River And Stones</a></h4>
-                                        </div>
-                                    </div>
+                                    {% endfor %}
                                 </div>
                             </div>
                             
