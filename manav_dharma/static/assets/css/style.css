@@ -109,6 +109,38 @@
 
 strong {font-weight: 600;}
 
+@keyframes bounceInLeft {
+  0% {
+     opacity: 0;
+     transform: translateX(-2000px);
+  }
+  60% {
+     opacity: 1;
+     transform: translateX(30px);
+  }
+  80% {
+     transform: translateX(-10px);
+  }
+  100% {
+     transform: translateX(0);
+  }
+}
+@keyframes bounce{
+  20%,50%,80%,to{
+    transform: translateY(0);
+  }
+  40%{
+    transform: translateY(-30px);
+  }
+  70%{
+    transform: translateY(-15px);
+
+  }
+  90%{
+    transform: translateY(-4px);
+  }
+}
+
 /*=== General Styling ===*/
 body, 
 html {overflow-x: hidden;}
@@ -119,18 +151,28 @@ body {
   width: 100%;
   max-width: 100%;
 }
+@font-face {
+  font-family : 'Magazine';
+  src : url(../fonts/MagazineGrotesque-Bold.ttf)
+}
+
+@font-face {
+  font-family : 'Regular';
+  src : url(../fonts/MagazineGrotesque-Regular.tff)
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: Philosopher;
+  font-family: Magazine, sans-serif;
   color: #222;
   font-weight: 700;
+  animation: bounce 1s linear;
 }
 p {
-  font-family: Noto Serif;
+  font-family: Regular;
   color: #666;
   line-height: 1.875rem;
   font-size: 1.0625rem;
@@ -452,10 +494,10 @@ footer {
 }
 .black-layer:before {background-color: #000000;}
 .white-layer:before {background-color:#ffffff;}
-.gray-layer:before {background-color: #f8f8f8}
+
 .gray-layer2:before {background-color: #fbfbfb}
 .gray-layer3:before {background-color: #eff4f1}
-.dark-layer:before {background-color: #28448c;}
+.dark-layer:before {background-color: #efebdb;}
 .dark-layer2:before {background-color: var(--color1);}
 .dark-layer3:before {background-color: var(--color7);}
 .blue-layer:before {background-color: var(--color1);}
@@ -483,7 +525,7 @@ footer {
 .opc7:before {opacity: .7;}
 .opc75:before {opacity: .75;}
 .opc8:before {opacity: .8;}
-.opc85:before {opacity: .85;}
+.opc85:before {opacity: .85; border-radius: 8px 8px;}
 .opc9:before {opacity: .9;}
 .opc95:before {opacity: .95;}
 .opc97:before {opacity: .97;}
@@ -1277,7 +1319,7 @@ header {
 .bg-color1 .social-links > a {color: white;}
 nav ul li {
   position: relative;
-  font-family: Philosopher;
+  font-family: Magazine;
   color: #333;
 }
 nav > div > ul > li {
@@ -2507,8 +2549,8 @@ span.event-price i {
 /*===== Campaigns Style 1 =====*/
 .camp-wrap {margin-top: -10px;}
 .camp-img {
-  min-width: calc(100% + .9375rem);
-  margin-left: -.9375rem;
+
+
 }
 .camp-img > a {
   color: #fff;
@@ -2526,7 +2568,7 @@ span.event-price i {
 .camp-info {
   max-width: calc(100% - .9375rem);
   border: 1.25rem solid #fff;
-  padding: 3.4375rem 3.75rem 4.6875rem 3.75rem;
+  padding: 2rem 2rem 2rem 2rem;
 }
 .camp-info > h3 {
   color: #fff;
@@ -2656,6 +2698,7 @@ span.proj-loc i {font-style: normal;}
   position: absolute;
   left: 0;
   top: 0;
+  color: #ec1c24;
   line-height: inherit;
   font-size: 14px;
 }
@@ -2665,9 +2708,9 @@ span.proj-loc i {font-style: normal;}
   padding-left: 1.5625rem;
 }
 .dark-layer .widget-title,
-.black-layer .widget-title {color: #fff;}
-.dark-layer .widget p {color: #f0f0f0;}
-.dark-layer .widget ul li {color: #ddd;}
+.black-layer .widget-title {color: #ec1c24;}
+.dark-layer .widget p {color: #24448c;}
+.dark-layer .widget ul li {color: #24448c;}
 .black-layer .widget ul li {color: #eaeaea;}
 .widget ul.cont-info-list2 li {line-height: 1.625rem;}
 .widget ul.cont-info-list2 li i {
@@ -5656,3 +5699,31 @@ ul.children .comment-detail > p {max-width: 100%;}
   padding: 1.03125rem 2.5rem;
 }
 .event-booking-form button span {margin-top: 0;}
+
+#card_ko {
+  margin-top: -15px;
+  
+  box-shadow: 0 16px 24px 2px rgb(0 0 0 / 14%), 0 6px 30px 5px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
+}
+@media only screen and (max-width: 600px) {
+  #card_ko {
+    width: 100% !important;
+    margin-top: 0px;
+  }
+}
+
+#footer {
+  background-image: url(/static/assets/images/bottomimg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#slide1 {
+  background-image: url(/staitc/assets/images/resources/slide.png);
+}
+
+@media only screen and (max-width: 600px) {
+  #slide1 {
+    background-image: url(/staitc/assets/images/resources/slide_1.png);
+  }
+}
