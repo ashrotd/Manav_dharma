@@ -1,17 +1,17 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}Video Satsang{% endblock title %}
+{% block title %}Our Gallery{% endblock title %}
 {% block body %}
 <section>
-    <div class="w-100 pt-80  pb-70 opc65 position-relative">
-        <div class="fixed-bg" style="background-image: url(static/assets/images/bottomimg.png);"></div>
+    <div class="w-100 pt-80 pb-70 opc65 position-relative">
+        <div class="fixed-bg" style="background-image: url(../static/assets/images/bottomimg.png);"></div>
         <div class="container">
             <div class="page-title-wrap text-center w-100">
                 <div class="page-title-inner d-inline-block">
-                    <h1 class="mb-0">Video Satsang</h1>
+                    <h1 class="mb-0">Our Gallery</h1>
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html" title="Home">Home</a></li>
-                        <li class="breadcrumb-item active">Video Satsang</li>
+                        <li class="breadcrumb-item"><a href="{% url 'home' %}" title="Home">Home</a></li>
+                        <li class="breadcrumb-item active">Gallery</li>
                     </ol>
                 </div>
             </div><!-- Page Title Wrap -->
@@ -24,15 +24,14 @@
         <div class="container">
             <div class="gallery-wrap w-100">
                 <div class="row">
-                    {% for i in video %}
+                    {% for i in gallery %}
                     <div class="col-md-6 col-sm-6 col-lg-4">
                         <div class="gallery-box text-center overflow-hidden position-relative w-100">
-                            <img class="img-fluid w-100" src="{{i.thumbnail_image.url}}" alt="Gallery Image 1">
-                            
+                            <img class="img-fluid w-100" src="{{i.image.url}}" alt="Gallery Image 1">
                             <div class="gallery-info position-absolute">
                                 <h3 class="mb-0">{{i.title}}</h3>
-                                <span class="d-block thm-clr">Satsang</span>
-                                <a class="thm-bg spinner position-absolute" href="{{i.video_url}}" data-fancybox title=""><i class="flaticon-play"></i></a>
+                                
+                                <a class="d-inline-block thm-clr" href="{{i.image.url}}" data-fancybox="gallery" title=""><i class="flaticon-view"></i></a>
                             </div>
                         </div>
                     </div>
@@ -40,31 +39,30 @@
                 </div>
             </div><!-- Gallery Wrap -->
             <div class="pagination-wrap mt-20 d-flex flex-wrap justify-content-center text-center w-100">
-                {% if video.has_other_pages %}
+                {% if gallery.has_other_pages %}
                 <ul class="pagination mb-0">
-                    {% if video.has_previous %}
-                    <li class="page-item prev"><a class="page-link" href="?page={{video.previous_page_number}}" title=""><i class="fas fa-long-arrow-alt-left"></i></a></li>
+                    {% if gallery.has_previous %}
+                    <li class="page-item prev"><a class="page-link" href="?page={{gallery.previous_page_number}}" title=""><i class="fas fa-long-arrow-alt-left"></i></a></li>
                     {% else %}
                     <li class="page-item"><a class="page-link" href="javascript:void(0);" title="">Prev</a></li>
                     {% endif %}
-                    {% for i in video.paginator.page_range  %}
-                    {% if video.number == i %}
+                    {% for i in gallery.paginator.page_range  %}
+                    {% if gallery.number == i %}
                     <li class="page-item active"><a class="page-link" href="#" title="">{{i}}</a></li>
                     {% else %}
                     <li class="page-item"><a class="page-link" href="?page={{i}}" title="">{{i}}</a></li>
                     {% endif %}
                     {% endfor %}
-                    {% if video.has_next %}
-                    <li class="page-item"><a class="page-link" href="?page={{video.next_page_number}}" title="">Next</a></li>
+                    {% if gallery.has_next %}
+                    <li class="page-item"><a class="page-link" href="?page={{gallery.next_page_number}}" title="">Next</a></li>
                     {% else %}
                     <li class="page-item"><a class="page-link" href="#" title="">Next</a></li>
                     {% endif %}
                     
                 </ul>
                 {% endif %}
-            </div><!-- Pagination Wrap -->
+            </div><!-- Pagination Wrap --><!-- Pagination Wrap -->
         </div>
     </div>
 </section>
-
 {% endblock body %}

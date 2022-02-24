@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'blog',
     'audio',
     'video',
+    'gallery',
 ]
 
 MIDDLEWARE = [

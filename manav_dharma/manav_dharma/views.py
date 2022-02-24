@@ -16,3 +16,18 @@ def about(request):
 
 def contact(request):
     return render(request,'contact.html')
+
+def humanitarian(request):
+    return render(request,'events/humanitarian.html')
+
+def misson_education(request):
+    return render(request,'events/misson_education.html')
+
+def satsangs(request):
+    return render(request,'events/satsangs.html')
+
+def children(request):
+    return render(request,'events/children_welfare.html')
+
+def community(request):
+    return render(request,'events/community.html')
