@@ -5705,7 +5705,7 @@ ul.children .comment-detail > p {max-width: 100%;}
   
   box-shadow: 0 16px 24px 2px rgb(0 0 0 / 14%), 0 6px 30px 5px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   #card_ko {
     width: 100% !important;
     margin-top: 0px;
@@ -5722,7 +5722,7 @@ ul.children .comment-detail > p {max-width: 100%;}
   background-image: url(/static/assets/images/resources/slide.png);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   #slide1 {
     background-image: url(/static/assets/images/resources/slide_1.png);
   }
