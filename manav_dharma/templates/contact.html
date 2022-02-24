@@ -10,7 +10,7 @@
                 <div class="page-title-inner d-inline-block">
                     <h1 class="mb-0">Contact Us</h1>
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html" title="Home">Maktab - Home</a></li>
+                        <li class="breadcrumb-item"><a href="{% url 'home' %}" title="Home">Home</a></li>
                         <li class="breadcrumb-item active">Contact Us</li>
                     </ol>
                 </div>
@@ -30,7 +30,7 @@
                                 <span class="bg-color1"><i class="flaticon-call"></i></span>
                                 <h4 class="mb-0">Phone Number</h4>
                                 <p class="mb-0">+01 (222) 123 4567</p>
-                                <p class="mb-0">+01 (222) 135 4567</p>
+                                
                             </div>
                         </div>
                     </div>
@@ -39,8 +39,8 @@
                             <div class="cont-info-box text-center position-relative w-100 pat-bg white-layer opc8 back-blend-multiply bg-white" style="background-image: url({% static 'assets/images/pattern.jpg' %});">
                                 <span class="bg-color1"><i class="flaticon-mail"></i></span>
                                 <h4 class="mb-0">Email Address</h4>
-                                <p class="mb-0"><a href="javascript:void(0);" title="">username@domainname.com</a></p>
-                                <p class="mb-0"><a href="javascript:void(0);" title="">officename@domainname.com</a></p>
+                                <p class="mb-0"><a href="javascript:void(0);" title="">info@manavdharma.org.np</a></p>
+                                
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                             <div class="cont-info-box text-center position-relative w-100 pat-bg white-layer opc8 back-blend-multiply bg-white" style="background-image: url({% static 'assets/images/pattern.jpg' %});">
                                 <span class="bg-color1"><i class="fas fa-map-marker-alt"></i></span>
                                 <h4 class="mb-0">Office Location</h4>
-                                <p class="mb-0">New Street Town No 20x lake New York City, NY-101 US</p>
+                                <p class="mb-0">Hans Ashram, Gausala, Kathmandu</p>
                             </div>
                         </div>
                     </div>
@@ -61,32 +61,37 @@
 <section>
     <div class="w-100 pb-250 position-relative">
         <img class="sec-botm-rgt-mckp img-fluid position-absolute" src="{% static 'assets/images/landmark.png' %}" alt="Sec Bottom Mockup">
-        <div id="contact-map" class="contact-map w-100"></div>
+        <div class="mt-5" id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.380422482071!2d85.34323681456534!3d27.705538232179343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1982a532bd25%3A0x1a26066e4a1ce6b3!2sNepal%20Manav%20Dharma%20Sewa%20Samiti!5e0!3m2!1sen!2snp!4v1645711635453!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        {% include 'includes/alert.html' %}
         <div class="container">
             <div class="contact-wrap mt-100 w-100">
                 <div class="row">
                     <div class="col-md-6 col-sm-12 col-lg-6">
                         <div class="cont-info-desc w-100">
-                            <h3 class="mb-0">Don't be a stranger just say hello.</h3>
-                            <p class="mb-0">We do fast phone repair. In most  to repair your device in just minutes, li we’ll normally get con nection inutes, we’ll normally ge.</p>
+                            <h3 class="mb-0">We will appreciate to hear you.</h3>
+                            <p class="mb-0">Send us your valuable Feedbacks or Queries to make us more Responsive.</p>
                             <h6 class="mb-0">Follow us on social media</h6>
                             <div class="social-links2 v2 text-center d-inline-flex">
-                                <a class="facebook" href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                <a class="twitter" href="https://twitter.com/" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                                <a class="google" href="https://www.google.com/" title="Google Plus" target="_blank"><i class="fab fa-google-plus-g"></i></a>
-                                <a class="linkedin" href="https://www.linkedin.com/" title="Linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="facebook" href="https://www.facebook.com/nepalmanavdharma" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="twitter" href="https://twitter.com/manavdharma_np" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a class="instagram" href="https://www.youtube.com/c/ManavDharma" title="Youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+                                <a class="linkedin" href="https://www.instagram.com/nepalmanavdharma/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 col-lg-6">
-                        <form class="cont-form w-100">
-                            <input type="text" placeholder="Complete Name">
-                            <input type="email" placeholder="Email Address">
-                            <input type="tel" placeholder="Phone No">
-                            <textarea placeholder="Message"></textarea>
-                            <button class="thm-btn thm-bg" type="submit">SEND MESSAGE<span></span><span></span><span></span><span></span></button>
+                        <form class="cont-form w-100" action="{% url 'contact' %}" method='POST'>
+                            {% csrf_token %}
+                            <input type="text" placeholder="Complete Name" name="name">
+                            <input type="email" placeholder="Email Address" name="email">
+                            <input type="tel" placeholder="Phone No" name="phone">
+                            <textarea placeholder="Message" name="message"></textarea>
+                            <button class="thm-btn thm-bg" type="submit" style="background:#ec1c24;">SEND MESSAGE</button>
                         </form>
                     </div>
+                    
                 </div>
             </div><!-- Contact Wrap -->
         </div>

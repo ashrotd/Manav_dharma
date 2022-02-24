@@ -14,8 +14,7 @@ def home(request):
 def about(request):
     return render(request,'about.html')
 
-def contact(request):
-    return render(request,'contact.html')
+
 
 def humanitarian(request):
     return render(request,'events/humanitarian.html')

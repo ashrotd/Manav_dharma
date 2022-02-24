@@ -13,7 +13,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home, name='home'),
     path('about/', views.about, name='about'),
-    path('contact/', views.contact, name='contact'),
+    path('contact/', include('contact.urls')),
     path('blog/', include('blog.urls')),
     path('audio/', include('audio.urls')),
     path('video_satsang/', include('video.urls')),
