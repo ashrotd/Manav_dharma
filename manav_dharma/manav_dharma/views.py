@@ -7,7 +7,7 @@ from video.models import VideoSatsang
 
 def home(request):
     blog = BlogModel.objects.all().order_by('-created_date')[:3]
-    videos = VideoSatsang.objects.all().order_by('-created_date')[:3]
+    videos = VideoSatsang.objects.all().order_by('-created_date')[:2]
     context = {'blog':blog,'videos':videos}
     return render(request,'home.html',context)
 
