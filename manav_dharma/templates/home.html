@@ -31,7 +31,9 @@
                                 <div class="plyr-inner w-100">
                                 <div class="plyr w-100" style="margin : 1.5rem 0;">
                                     <ul class="playlist mb-0 list-unstyled">
-                                        <li data-cover="{% static 'assets/images/audiologo.png' %}"><a href="{% static 'assets/audio/jo bhajega hari.mp3' %}"></a></li>
+                                        {% for i in bhajans %}
+                                        <li data-cover="{% static 'assets/images/audiologo.png' %}"><a href="{{i.file.url}}"></a></li>
+                                        {% endfor %}
                                     </ul>
                                 </div>
                             </div>
