@@ -2020,7 +2020,7 @@ body.sticky .sticky-menu {
   content: "";
   height: 3.4375rem;
   width: 3.4375rem;
-  border: 2px solid #000;
+  border: 2px solid white;
   position: absolute;
   left: 0;
   top: 0;
