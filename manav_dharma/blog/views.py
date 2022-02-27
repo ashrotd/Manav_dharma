@@ -21,6 +21,7 @@ def blog_detail(request, blog_slug):
         single_blog = BlogModel.objects.get(slug=blog_slug)
     except Exception as e:
         raise e
-    recent_blog = BlogModel.objects.all().order_by('-created_date')[:3]
-    context = {'single_blog':single_blog, 'recent_blog':recent_blog}
+    recent_blog = BlogModel.objects.all().order_by('-created_date')[:5]
+    day = single_blog.created_date.strftime("%b")
+    context = {'single_blog':single_blog, 'recent_blog':recent_blog,'day':day}
     return render(request,'blog_detail.html',context)

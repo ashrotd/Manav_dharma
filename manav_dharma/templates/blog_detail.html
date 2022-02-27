@@ -3,8 +3,8 @@
 {% block title %}{{single_blog.title}}{% endblock title %}
 {% block body %}
 <section>
-    <div class="w-100 pt-80 black-layer pb-70 opc65 position-relative">
-        <div class="fixed-bg" style="background-image: url({% static 'assets/images/page-title-bg.jpg' %});"></div>
+    <div class="w-100 pt-80 pb-70 opc65 position-relative">
+        <div class="fixed-bg" style="background-image: url({% static 'assets/images/bottomimg.png' %});"></div>
         <div class="container">
             <div class="page-title-wrap text-center w-100">
                 <div class="page-title-inner d-inline-block">
@@ -30,24 +30,24 @@
                             <div class="post-detail-img w-100">
                                 <img class="img-fluid w-100" src="{{single_blog.image.url}}" alt="Blog Detail Image 1">
                             </div>
-                            <div class="post-detail-info position-relative w-100">
+                            <div class="position-relative w-100">
                                 <div class="post-info2-inner text-center">
                                     <div class="post-date2">
-                                        <span class="d-block">12</span>
-                                        <i class="d-block thm-bg">Jul 2019</i>
+                                        <span class="d-block">{{single_blog.created_date.day}}</span>
+                                        <i class="d-block thm-bg">{{day}} {{single_blog.created_date.year}}</i>
                                     </div>
                                     
                                 </div>
-                                <ul class="post-meta2 d-inline-flex flex-wrap align-items-center mb-0 list-unstyled">
+                                <ul class="post-meta2 d-inline-flex flex-wrap align-items-center mb-0 list-unstyled" style="margin-left:100px; margin-top:25px;">
                                     
                                     <li class="thm-clr"><img class="img-fluid rounded-circle" src="{% static 'assets/images/audiologo.png' %}" alt="Post Author Thumb 1">BY: <a href="javascript:void(0);" title="">{{single_blog.author}}</a></li>
                                 </ul>
-                                <h2 class="mb-4">{{single_blog.title }}</h2>
+                                <h2 class="mb-4 mt-5">{{single_blog.title }}</h2>
                                 {{single_blog.content | safe}}
                             </div>
                             
                             <div class="share-tags-wrap d-flex flex-wrap w-100">
-                                <div class="share-links d-inline-flex">
+                                <div class="share-links mx-auto d-inline-flex">
                                     <span class="d-inline-block">Share This:</span>
                                     <div class="social-links4 v2 text-center d-inline-flex">
                                         <a href="https://www.tumblr.com/" title="Tumblr" target="_blank"><i class="fab fa-tumblr"></i></a>
@@ -55,14 +55,7 @@
                                         <a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
                                     </div>
                                 </div>
-                                <div class="tags-links d-inline-flex">
-                                    <span class="d-inline-block">Tags:</span>
-                                    <a href="javascript:void(0);" title="">Graphic Design</a>,
-                                    <a href="javascript:void(0);" title="">Photoshop</a>,
-                                    <a href="javascript:void(0);" title="">Websites</a>,
-                                    <a href="javascript:void(0);" title="">Photography</a>,
-                                    <a href="javascript:void(0);" title="">Articles</a>
-                                </div>
+                                
                             </div><!-- Share & Tags Wrap -->
                             <!-- Author Box Wrap -->
                             <!-- Comments Thread -->
@@ -79,7 +72,7 @@
                                         <a href="{{i.get_url}}" title=""><img class="img-fluid w-100" src="{{i.image.url}}" alt="Mini Post Image 1"></a>
                                         <div class="mini-post-info">
                                             <span class="d-block thm-clr">{{i.created_date}}</span>
-                                            <h4 class="mb-0"><a href="blog-detail.html" title="">{{i.title}}</a></h4>
+                                            <h4 class="mb-0"><a href="{{i.get_url}}" title="">{{i.title}}</a></h4>
                                         </div>
                                     </div>
                                     {% endfor %}
