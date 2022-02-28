@@ -2690,6 +2690,7 @@ span.proj-loc i {font-style: normal;}
 .widget ul li {
   position: relative;
   font-size: 1rem;
+  animation: bounceInLeft 2s linear;
 }
 .widget ul:not(.cont-info-list2) li a:before {
   content: "\f061";
