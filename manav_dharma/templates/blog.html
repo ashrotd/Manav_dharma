@@ -10,8 +10,8 @@
                 <div class="page-title-inner d-inline-block">
                     <h1 class="mb-0">Our Blog</h1>
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="index.html" title="Home">Maktab - Home</a></li>
-                        <li class="breadcrumb-item active">Blog Style 1</li>
+                        <li class="breadcrumb-item"><a href="{% url 'home' %}" title="Home">Home</a></li>
+                        <li class="breadcrumb-item active">Blogs</li>
                     </ol>
                 </div>
             </div><!-- Page Title Wrap -->
@@ -31,7 +31,7 @@
                                 <a href="" title=""><img class="img-fluid w-100" src="{{i.image.url}}" alt="Blog Image 1"></a>
                             </div>
                             <div class="post-info position-relative w-100">
-                                <a class="thm-bg" href="{{i.get_url}}" style="background:#ec1c24;" title=""><i class="fas fa-link"></i></a>
+                                <a class="thm-bg" href="{{i.get_url}}" style="background:#ec1c24;" title="" ><i class="fas fa-link"></i></a>
                                 <span class="post-date thm-clr">{{i.created_date}}</span>
                                 <h3 class="mb-0"><a href="blog-detail.html" title="">{{i.title}}</a></h3>
                                 <ul class="post-meta d-flex flex-wrap mb-0 list-unstyled">

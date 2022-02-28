@@ -10,6 +10,7 @@ class BlogModel(models.Model):
     content = RichTextField(blank=True)
     slug = models.SlugField(max_length=1000, unique=True)
     image = models.ImageField(upload_to='blog', help_text="Recommended Size 350X260px")
+    real_image = models.ImageField(upload_to='detail_blog', help_text="Used Inside a Blog")
     author = models.CharField(max_length=200)
     created_date = models.DateTimeField(auto_now_add=True)
     update_date = models.DateTimeField(auto_now=True)

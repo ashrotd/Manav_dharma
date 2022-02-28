@@ -28,7 +28,7 @@
                     <div class="col-md-12 col-sm-12 col-lg-9">
                         <div class="post-detail-inner w-100">
                             <div class="post-detail-img w-100">
-                                <img class="img-fluid w-100" src="{{single_blog.image.url}}" alt="Blog Detail Image 1">
+                                <img class="img-fluid w-100" src="{{single_blog.real_image.url}}" alt="Blog Detail Image 1">
                             </div>
                             <div class="position-relative w-100">
                                 <div class="post-info2-inner text-center">
@@ -40,7 +40,7 @@
                                 </div>
                                 <ul class="post-meta2 d-inline-flex flex-wrap align-items-center mb-0 list-unstyled" style="margin-left:100px; margin-top:25px;">
                                     
-                                    <li class="thm-clr"><img class="img-fluid rounded-circle" src="{% static 'assets/images/audiologo.png' %}" alt="Post Author Thumb 1">BY: <a href="javascript:void(0);" title="">{{single_blog.author}}</a></li>
+                                    <li class="thm-clr" style="margin-left:20px;"><img class="img-fluid rounded-circle" src="{% static 'assets/images/audiologo.png' %}" alt="Post Author Thumb 1">BY: <a href="javascript:void(0);" title="">{{single_blog.author}}</a></li>
                                 </ul>
                                 <h2 class="mb-4 mt-5">{{single_blog.title }}</h2>
                                 {{single_blog.content | safe}}
