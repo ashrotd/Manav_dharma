@@ -160,13 +160,17 @@ body {
   font-family : 'Regular';
   src : url(../fonts/MagazineGrotesque-Regular.tff)
 }
+@font-face {
+  font-family : 'Patua';
+  src : url(../fonts/PatuaOne-Regular.tff)
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: Magazine, sans-serif;
+  font-family: Patua, sans-serif;
   color: #222;
   font-weight: 700;
   animation: bounce 1s linear;
