@@ -5098,7 +5098,7 @@ ul.pagination > li.page-item a.page-link:focus {color: #fff;}
   position: relative;
   margin-top: -2.1875rem;
 }
-.cont-info-box:hover > span {background-color: #000;}
+.cont-info-box:hover > span {background-color: #ec1c24;}
 .cont-info-box > span:before {
   content: "";
   border-left: 6px solid transparent;
