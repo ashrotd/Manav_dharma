@@ -1675,13 +1675,14 @@ body.sticky .sticky-menu {
   display: inline-block;
   color: #fff;
   font-family: Philosopher;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 700;
   padding: .9375rem 3.75rem;
   position: relative;
   overflow: hidden;
   margin-bottom: -5px;
   text-align: center;
+  border-radius: 30px;
   z-index: 1;
 }
 .thm-btn span {
