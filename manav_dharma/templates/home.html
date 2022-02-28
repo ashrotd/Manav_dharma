@@ -136,12 +136,12 @@
                             <div class="camp-info pat-bg thm-layer opc8 position-relative back-blend-multiply thm-bg" style="background-image: url({% static 'assets/images/Pattern.jpg' %});">
                                 <h3 style="color: aliceblue;">Please subscribe us:</h1><div class="g-ytsubscribe" data-channelid="UCuoil7bHE8RCov-2uT137YA" data-layout="default" data-count="default"></div>
                                 {% for i in videos %}
-                                <div class="camp-img position-relative w-100 mt-2" style="animation: bounceInLeft 2s linear;">
+                                <div class="camp-img position-relative w-100 mt-4" style="animation: bounceInLeft 2s linear;">
                                     <img class="img-fluid w-100" style="height:200px;" src="{{i.thumbnail_image.url}}" alt="video Image 1">
-                                    <a class="thm-bg spinner position-absolute" style="background:none;" href="{{i.video_url}}" data-fancybox title=""><i class="flaticon-play"></i></a>
+                                    <a class="thm-bg spinner position-absolute" style="background:none;" href="{{i.video_url}}" data-fancybox title=""><i class="flaticon-play" style="padding:35px"></i></a>
                                 </div>
                                 {% endfor %}
-                                <a class="thm-btn mt-2" style="background:#ec1c24" href="{% url 'video' %}" title="">View More<span></span><span></span><span></span><span></span></a>
+                                <a class="thm-btn mt-3" style="background:#ec1c24" href="{% url 'video' %}" title="">View More<span></span><span></span><span></span><span></span></a>
                             </div>
                         </div>
                         <div class="col-md-12 col-sm-12 col-lg-7 order-lg-1 shadow">
