@@ -146,7 +146,7 @@ body,
 html {overflow-x: hidden;}
 body {
   margin: 0;
-  font-family: Noto Serif;
+  font-family: Regular , sans-serif;
   position: relative;
   width: 100%;
   max-width: 100%;
@@ -183,7 +183,7 @@ p {
 }
 ul li,
 ol li {
-  font-family: Noto Serif;
+  font-family: Regular , sans-serif;
   color: #666;
   line-height: 1.875rem;
   font-size: 1.0625rem;
@@ -1293,7 +1293,7 @@ header {
   padding-top: 9.125px;
   padding-bottom: 9.125px;
 }
-.topbar-left .topbar-info-list > li {font-family: Philosopher;}
+.topbar-left .topbar-info-list > li {font-family: Regular , sans-serif;}
 .bg-color1 .topbar-info-list > li {color: #fff;}
 .topbar-info-list > li:not(:first-child) {
   padding-left: 1.5625rem;
@@ -1632,7 +1632,7 @@ body.sticky .sticky-menu {
   overflow-y: auto !important;
   width: 100% !important;
 }
-.rsnp-mnu > ul li {font-family: Philosopher;}
+.rsnp-mnu > ul li {font-family: Regular , sans-serif;}
 .rsnp-mnu > ul > li {
   color: #fff;
   font-size: 1.125rem;
@@ -1678,7 +1678,7 @@ body.sticky .sticky-menu {
 .thm-btn {
   display: inline-block;
   color: #fff;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
   padding: .9375rem 3.75rem;
@@ -1915,7 +1915,7 @@ body.sticky .sticky-menu {
 .plyr .player .info > div.title {font-size: 1rem;}
 .plyr .player .info > div.artist {font-size: 14px;}
 .plyr .player .info > div {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-weight: 700;
 }
 .plyr .player .controls {
@@ -1999,7 +1999,7 @@ body.sticky .sticky-menu {
 /*=== Contact Info Style 1 ===*/
 .cont-info {padding-left: 5.625rem;}
 .cont-info-list > li {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   position: relative;
@@ -2062,7 +2062,7 @@ body.sticky .sticky-menu {
 .sec-title-inner > h2 {font-size: 3.125rem;}
 .sec-title-inner > h1 + p,
 .sec-title-inner > h2 + p {margin-top: 8px;}
-.sec-title-inner > p {color: #999;}
+.sec-title-inner > p {color: #222; font-size: 25px;}
 .thm-layer .sec-title-inner > h1,
 .thm-bg .sec-title-inner > h1,
 .black-layer .sec-title-inner > h1,
@@ -2149,7 +2149,7 @@ body.sticky .sticky-menu {
 .prod-detail-img .price {
   right: 0;
   top: 0;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-size: 1.875rem;
   font-weight: 700;
   padding: 2.3125rem .9375rem;
@@ -2225,7 +2225,7 @@ body.sticky .sticky-menu {
 .qty-wrap + a {margin-top: 2.1875rem;}
 .prod-info > a {
   text-decoration: underline;
-  font-family: Philosopher;
+  font-family: Regular, sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   display: inline-block;
@@ -2263,7 +2263,7 @@ body.sticky .sticky-menu {
 .serv-box > a {
   display: inline-block;
   font-size: 1.125rem;
-  font-family: Philosopher;
+  font-family: Regular, sans-serif;
   font-weight: 700;
   text-decoration: underline;
 }
@@ -2322,7 +2322,7 @@ ul.time-list > li:nth-child(2n+1)::before {
 }
 .thm-layer ul.time-list > li {color: #fff;}
 .time-box > span {
-  font-family: Philosopher;
+  font-family: Regular, sans-serif;;
   font-weight: 700;
   font-size: 1.25rem;
 }
@@ -2475,14 +2475,14 @@ span.event-loc i {
 span.event-time {font-size: .9375rem;}
 span.event-price {
   font-size: 1.875rem;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-weight: 700;
   color: #333;
 }
 span.event-price sup {font-size: 60%;}
 span.event-price i {
   font-style: normal;
-  font-family: Noto Serif;
+  font-family: Regular , sans-serif;
   color: #7e7e7e;
   font-weight: 400;
   font-size: 14px;
@@ -2598,14 +2598,14 @@ span.proj-loc i {font-style: normal;}
 .goal > span.price {
   font-size: 2.25rem;
   font-weight: 700;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   line-height: 1;
 }
 .goal > i {
   font-style: normal;
   font-size: 1.0625rem;
   font-weight: 700;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   margin-top: 3px;
 }
 .goal + a {margin-top: 2.9375rem;}
@@ -2710,7 +2710,7 @@ span.proj-loc i {font-style: normal;}
   font-size: 14px;
 }
 .widget ul:not(.cont-info-list2) li {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-size: 1.125rem;
   padding-left: 1.5625rem;
 }
@@ -2730,7 +2730,7 @@ span.proj-loc i {font-style: normal;}
 .bottom-bar {padding: 1.875rem .9375rem;}
 .bottom-bar p {
   font-size: 1.125rem;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
 }
 .bottom-bar p a:hover, 
 .bottom-bar p a:focus {color: #fff;}
@@ -2747,7 +2747,7 @@ span.proj-loc i {font-style: normal;}
 .time-list2 > li {
   background-color: #ededed;
   color: #333;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -2849,7 +2849,7 @@ span.proj-loc i {font-style: normal;}
 .about-title > h2 + p {margin-top: 12px;}
 .about-title > p {
   font-size: 1rem;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.5;
@@ -2950,7 +2950,7 @@ span.proj-loc i {font-style: normal;}
 .event-caro + a {margin-top: 2.8125rem;}
 .event-wrap2 > a {
   font-size: 1rem;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   display: inline-block;
   line-height: 1;
   border-bottom: 1px solid;
@@ -3057,7 +3057,7 @@ span.proj-loc i {font-style: normal;}
 .sermon-info > span {
   font-size: 14px;
   bottom: -2.5rem;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   text-transform: uppercase;
   padding: 1.125rem 3.4375rem 1.125rem 1.75rem;
   -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
@@ -3113,7 +3113,7 @@ span.proj-loc i {font-style: normal;}
 }
 .pack-head > p + span {margin-top: 1.875rem;}
 .pack-head > span {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-size: 2.25rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -3190,7 +3190,7 @@ span.proj-loc i {font-style: normal;}
 }
 .urgent-donat-info {padding: 1.75rem 11.875rem 1.875rem 3.125rem;}
 .urgent-donat-info > span {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -3204,7 +3204,7 @@ span.proj-loc i {font-style: normal;}
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   color: #999;
 }
 .urgent-donat-meta > li:not(:first-child) {margin-left: 1.875rem;}
@@ -3257,7 +3257,7 @@ span.proj-loc i {font-style: normal;}
   position: absolute;
   font-size: 1.5rem;
   color: #333;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-weight: 700;
   left: 50%;
   top: 50%;
@@ -3268,12 +3268,12 @@ span.proj-loc i {font-style: normal;}
 }
 .urgent-donat-info-raised > span {
   font-size: 1.5625rem;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-weight: 700;
 }
 .urgent-donat-info-raised > span + i {margin-top: -6px;}
 .urgent-donat-info-raised > i {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   font-style: normal;
@@ -3389,7 +3389,7 @@ span.proj-loc i {font-style: normal;}
   padding: 5px 5px 1.875rem;
 }
 .post-date2 > span {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-size: 2.625rem;
   font-weight: 700;
   color: #222;
@@ -3401,7 +3401,7 @@ span.proj-loc i {font-style: normal;}
   bottom: -6px;
   font-size: 13px;
   font-weight: 700;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   text-transform: uppercase;
   font-style: normal;
   padding: 7.25px 5px;
@@ -3409,7 +3409,7 @@ span.proj-loc i {font-style: normal;}
 .post-date2 + .post-meta4 {margin-top: 8px;}
 .post-meta4 {padding: 0 1.09375rem;}
 .post-meta4 > span {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-size: 1rem;
   color: #999;
   font-weight: 700;
@@ -3421,7 +3421,7 @@ span.proj-loc i {font-style: normal;}
   margin-bottom: 4px;
 }
 .post-meta2 > li {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -3533,7 +3533,7 @@ span.proj-loc i {font-style: normal;}
 /*=== Bottom Bar Style 2 ===*/
 .donat-methods + .bottom-bar2 {margin-top: 1.875rem;}
 .bottom-bar2 > p {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-size: 1.125rem;
 }
 .thm-layer .bottom-bar2 > p a:hover, 
@@ -3569,7 +3569,7 @@ span.proj-loc i {font-style: normal;}
 .time-list3 > li {
   flex: 0 0 16.66667%;
   max-width: 16.66667%;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   text-transform: uppercase;
   font-size: 1.25rem;
   font-weight: 700;
@@ -3591,7 +3591,7 @@ span.proj-loc i {font-style: normal;}
 /*===== About Style 3 =====*/
 .about-wrap3 {padding: 0 4.375rem;}
 .about-inner3 > span {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -3692,7 +3692,7 @@ span.proj-loc i {font-style: normal;}
   text-transform: uppercase;
   border-bottom: 1px solid;
   display: inline-block;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-weight: 700;
   line-height: 1;
 }
@@ -3721,7 +3721,7 @@ span.proj-loc i {font-style: normal;}
 }
 .learn-post-info > span + a {margin-top: 5px;}
 .learn-post-info > a {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   display: inline-block;
   line-height: 1;
   border-bottom: 1px solid;
@@ -3871,7 +3871,7 @@ span.proj-loc i {font-style: normal;}
   padding: 1rem 1.875rem;
   font-size: 14px;
   color: #999;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
 }
 .get-started-inner form button {
   width: 100%;
@@ -3900,7 +3900,7 @@ span.proj-loc i {font-style: normal;}
   top: 4.0625rem;
   color: #fff;
   z-index: 1;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -3923,7 +3923,7 @@ span.proj-loc i {font-style: normal;}
   padding: 0 4.0625rem 3.4375rem;
 }
 .course-info3 > span {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -3988,7 +3988,7 @@ span.proj-loc i {font-style: normal;}
 .donate-title > h2 span {font-weight: 400;}
 .donate-title > h2 + span {margin-top: 1.5625rem;}
 .donate-title > span {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-weight: 700;
   font-size: 2.25rem;
 }
@@ -4012,7 +4012,7 @@ span.proj-loc i {font-style: normal;}
   right: 1.875rem;
 }
 .donate-collected > span {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-size: 3.125rem;
   font-weight: 700;
   line-height: 1;
@@ -4022,12 +4022,12 @@ span.proj-loc i {font-style: normal;}
   text-transform: uppercase;
   color: #fff;
   font-size: .9375rem;
-  font-family: Noto Serif;
+  font-family: Regular , sans-serif;
 }
 .donate-collected + span {margin-top: 12px;}
 .donate-box-inner-inner > span {
   font-size: 1rem;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   color: var(--color1);
@@ -4171,7 +4171,7 @@ span.proj-loc i {font-style: normal;}
 }
 .social-links3 > a {
   display: inline-block;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-weight: 700;
   font-size: 1.0625rem;
 }
@@ -4204,7 +4204,7 @@ span.proj-loc i {font-style: normal;}
   background-color: transparent;
   color: #fff;
   padding: 1rem 7.5rem 1rem 1rem;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-size: .9375rem;
   font-weight: 700;
 }
@@ -4242,14 +4242,14 @@ span.proj-loc i {font-style: normal;}
 /*=== Bottom Bar Style 3 ===*/
 .bottom-bar3 {padding: 2.1875rem 0;}
 .bottom-inner > p {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-size: 1.125rem;
 }
 .dark-bg3 .bottom-inner > p, 
 .dark-bg3 .bottom-links > li {color: #fff;}
 .bottom-links > li {
   font-size: 1rem;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-weight: 700;
   position: relative;
 }
@@ -4313,7 +4313,7 @@ ul.pagination {
 ul.pagination > li.page-item {
   color: #222;
   font-size: 1.125rem;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-weight: 700;
   line-height: 2.5rem;
 }
@@ -4355,7 +4355,7 @@ ul.pagination > li.page-item a.page-link:focus {color: #fff;}
 
 /*===== About Style 4 =====*/
 .about-inner4 > span {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -4552,7 +4552,7 @@ ul.pagination > li.page-item a.page-link:focus {color: #fff;}
 .sermon-detail-info > h2 + .post-meta2 {margin-top: 10px;}
 .post-meta2 + .sermons-btns-wrap {margin-top: 2.5rem;}
 .sermons-btns2 > a {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-size: 1rem;
   font-weight: 700;
   display: inline-block;
@@ -4688,7 +4688,7 @@ ul.pagination > li.page-item a.page-link:focus {color: #fff;}
   top: 4.375rem;
 }
 .prod-detail-tabs ul.nav-tabs li.nav-item {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   text-transform: uppercase;
   color: #222;
   font-weight: 700;
@@ -4816,7 +4816,7 @@ ul.pagination > li.page-item a.page-link:focus {color: #fff;}
 }
 .gallery-info > h3 + span {margin-top: 8px;}
 .gallery-info > span {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -4855,7 +4855,7 @@ ul.pagination > li.page-item a.page-link:focus {color: #fff;}
 .cart-table thead tr th {
   color: #fff;
   font-size: 1.375rem;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   padding: 1.47rem 1.25rem;
 }
 .cart-table thead tr th:first-child {padding-left: 3.125rem;}
@@ -4886,7 +4886,7 @@ ul.pagination > li.page-item a.page-link:focus {color: #fff;}
 .cart-table tbody tr td span {
   font-size: 1.125rem;
   font-weight: 700;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
 }
 .coupon-cart-total-wrap {
   margin-top: 3.125rem;
@@ -4982,7 +4982,7 @@ ul.pagination > li.page-item a.page-link:focus {color: #fff;}
   border-bottom: 1px solid;
   line-height: 1;
   font-size: 1rem;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   margin-top: 2rem;
   margin-bottom: 1.6875rem;
 }
@@ -5207,7 +5207,7 @@ form.cont-form > button {
 .share-tags-wrap > div + div {margin-left: 4.0625rem;}
 .share-tags-wrap > div > span {
   font-size: 1rem;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   text-transform: uppercase;
   color: #333;
   font-weight: 700;
@@ -5215,7 +5215,7 @@ form.cont-form > button {
 }
 .tags-links {
   color: #8799a3;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-weight: 700;
 }
 .tags-links > a {margin-left: 3px;}
@@ -5269,7 +5269,7 @@ form.cont-form > button {
 .comment-detail > h4 + small {margin-left: 10px;}
 .author-info > small, 
 .comment-detail > small {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-weight: 700;
   font-size: .9375rem;
 }
@@ -5281,7 +5281,7 @@ form.cont-form > button {
   max-width: 90%;
 }
 .author-social > span {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   color: #333;
   font-weight: 700;
   font-size: 14px;
@@ -5299,7 +5299,7 @@ ul.children .comment-detail > p {max-width: 100%;}
 .author-info > p + .author-social {margin-top: 1.25rem;}
 .comment-detail > a {
   display: inline-block;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   text-decoration: underline;
@@ -5366,13 +5366,13 @@ ul.children .comment-detail > p {max-width: 100%;}
 .mini-post-box + .mini-post-box {margin-top: 1.875rem;}
 .widget2 ul:not(.insta-list) li {
   font-size: 1rem;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   color: #333;
 }
 .widget2 h3 + ul {margin-top: -5px;}
 .widget2 ul.cate-list li {
   text-align: right;
-  font-family: Noto Serif;
+  font-family: Regular , sans-serif;
   color: #999;
 }
 .widget2 ul:not(.insta-list) li a {
@@ -5449,7 +5449,7 @@ ul.children .comment-detail > p {max-width: 100%;}
   width: 100%;
   font-size: .9375rem;
   color: #666;
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-weight: 700;
 }
 .newsletter-widget > form button {
@@ -5478,7 +5478,7 @@ ul.children .comment-detail > p {max-width: 100%;}
 }
 .insta-list + .insta-bottom {margin-top: 2.5rem;}
 .insta-bottom-inner > span {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-weight: 700;
   color: #999;
   font-size: 14px;
@@ -5501,7 +5501,7 @@ ul.children .comment-detail > p {max-width: 100%;}
   max-width: 70%;
 }
 .course-detail-info-inner > span {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -5526,7 +5526,7 @@ ul.children .comment-detail > p {max-width: 100%;}
 .gray-layer .course-scholar-inner > h5, 
 .gray-bg .course-scholar-inner > h5 {color: #333;}
 .course-detail-info-bottom .price {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
 }
@@ -5596,7 +5596,7 @@ ul.children .comment-detail > p {max-width: 100%;}
   align-items: center;
 }
 .event-detail-price-button-inner > span.price {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   color: #333;
   font-weight: 700;
   font-size: 1.875rem;
@@ -5628,7 +5628,7 @@ ul.children .comment-detail > p {max-width: 100%;}
 .event-detail-info-inner > ul li a:hover, 
 .event-detail-info-inner > ul li a:focus {color: #333;}
 .event-detail-info-inner > ul li span {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-weight: 700;
   margin-bottom: 3px;
 }
@@ -5673,7 +5673,7 @@ ul.children .comment-detail > p {max-width: 100%;}
 .gray-layer .event-form-info-list > li, 
 .gray-bg .event-form-info-list > li {background-color: #fff;}
 .event-form-info-list > li > span {
-  font-family: Philosopher;
+  font-family: Regular , sans-serif;
   font-size: 1.24rem;
   color: #333;
 }
