@@ -2431,7 +2431,7 @@ ul.time-list > li:nth-child(2n+1)::before {
 .team-info > h3 + span {margin-top: 4px;}
 .team-info > span {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
 }
 
