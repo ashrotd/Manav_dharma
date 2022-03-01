@@ -2256,7 +2256,7 @@ body.sticky .sticky-menu {
 .serv-box > h3 + p {margin-top: 8px;}
 .serv-box > p {
   font-size: .9375rem;
-  line-height: 1.625rem;
+  line-height: 1.3rem;
   color: #333;
 }
 .serv-box > p + a {margin-top: 1.6875rem;}
