@@ -5729,8 +5729,16 @@ ul.children .comment-detail > p {max-width: 100%;}
   background-image: url(/static/assets/images/resources/slide.png);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
   #slide1 {
     background-image: url(/static/assets/images/resources/slide_1.png);
+  }
+}
+#slide2 {
+  background-image: url(/static/assets/images/resources/slide2.png);
+}
+@media only screen and (max-width: 600px) {
+  #slide2 {
+    background-image: url(/static/assets/images/resources/slide2_m.png);
   }
 }
