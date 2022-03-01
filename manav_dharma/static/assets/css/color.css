@@ -181,7 +181,7 @@ ol.breadcrumb > li.breadcrumb-item a:focus,
 .rspn-cnt > span a:hover,
 .rspn-cnt > span a:focus
 {
-	color: var(--theme-color);
+	color: #ec1c24
 }
 
 /*===== Border Color =====*/
