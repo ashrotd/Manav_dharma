@@ -137,7 +137,7 @@
                                 <h3 style="color: aliceblue;">Please subscribe us:</h1><div class="g-ytsubscribe" data-channelid="UCuoil7bHE8RCov-2uT137YA" data-layout="default" data-count="default"></div>
                                 {% for i in videos %}
                                 <div class="camp-img position-relative w-100 mt-4" style="animation: bounceInLeft 2s linear;">
-                                    <img class="img-fluid w-100" style="height:200px;" src="{{i.thumbnail_image.url}}" alt="video Image 1">
+                                    <img class="img-fluid w-100" src="{{i.thumbnail_image.url}}" alt="video Image 1">
                                     <a class="thm-bg spinner position-absolute" style="background:#ec1c24; width:3rem; height:3rem; font-size:2rem; line-height:3rem" href="{{i.video_url}}" data-fancybox title=""><i class="flaticon-play"></i></a>
                                 </div>
                                 {% endfor %}

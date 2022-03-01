@@ -5742,3 +5742,12 @@ ul.children .comment-detail > p {max-width: 100%;}
     background-image: url(/static/assets/images/resources/slide2_m.png);
   }
 }
+
+@media screen 
+  and (min-width: 600px)
+  and (max-width: 1024px){
+    #slide2 {
+      background-image: url(/static/assets/images/resources/slide2_i.png);
+    }
+
+}
