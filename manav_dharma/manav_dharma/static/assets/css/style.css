@@ -176,9 +176,9 @@ h6 {
   animation: bounce 1s linear;
 }
 p {
-  font-family: Regular;
+  font-family: Regular, sans-serif;
   color: #666;
-  line-height: 1.875rem;
+  line-height: 1.4rem;
   font-size: 1.0625rem;
 }
 ul li,
