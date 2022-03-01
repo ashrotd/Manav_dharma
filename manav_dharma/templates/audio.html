@@ -18,19 +18,20 @@
         </div>
     </div>
 </section>
+
 <section>
     <div class="w-100 pt-120 pb-250 position-relative">
         <img class="sec-botm-rgt-mckp img-fluid position-absolute" src="{% static 'assets/images/landmark.png' %}" alt="Sec Bottom Mockup">
         <div class="container">
             <div class="plyr-wrp2 d-inline-block w-100">
                 {% for i in bhajans %}
-                <div class="plyr-box w-100 pat-bg white-layer opc85 back-blend-multiply bg-white" style="background-image: url({% static 'assets/images/pattern.jpg' %});">
+                <div class="plyr-box w-100 pat-bg white-layer opc85 back-blend-multiply bg-white" style="background-image: url({% static 'assets/images/pattern.jpg' %})">
                     <div class="plyr v4 w-100">
                         <ul class="playlist mb-0 list-unstyled">
-                            <li data-cover="{% static 'assets/images/audiologo.png' %}" data-artist="Manav Dharma"><a href="{{i.file.url}}" title="">jo bhajega hari</a></li>
+                            <li data-cover="{% static 'assets/images/audiologo.png' %}"><a href="{{i.file.url}}" title="">{{i.name}}</a></li>
                         </ul>
                     </div>
-                </div><!-- Player Wrap -->
+                </div>
                 {% endfor %}
             </div><!-- Player Wrap 2 -->
             <div class="pagination-wrap mt-20 d-flex flex-wrap justify-content-center text-center w-100">
