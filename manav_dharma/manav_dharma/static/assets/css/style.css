@@ -5751,3 +5751,14 @@ ul.children .comment-detail > p {max-width: 100%;}
     }
 
 }
+
+#box-play {
+  color:#24438c; left:8rem; top:1rem; position:absolute;
+}
+@media only screen and (max-width: 600px) {
+  #box-play {
+    top:10rem;
+    left:6rem;
+    position: absolute;
+  }
+}

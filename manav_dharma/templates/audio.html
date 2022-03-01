@@ -25,10 +25,13 @@
         <div class="container">
             <div class="plyr-wrp2 d-inline-block w-100">
                 {% for i in bhajans %}
+               
                 <div class="plyr-box w-100 pat-bg white-layer opc85 back-blend-multiply bg-white" style="background-image: url({% static 'assets/images/pattern.jpg' %})">
+                    <h4 class="text-center" id="box-play">{{i.name}}</h4>
                     <div class="plyr v4 w-100">
+                        
                         <ul class="playlist mb-0 list-unstyled">
-                            <li data-cover="{% static 'assets/images/audiologo.png' %}"><a href="{{i.file.url}}" title="">{{i.name}}</a></li>
+                            <li data-cover="{% static 'assets/images/audiologo.png' %}"><a href="{{i.file.url}}" title="">Bhajan</a></li>
                         </ul>
                     </div>
                 </div>
